@@ -4,7 +4,10 @@
   "description": "A modern, feature-rich Minesweeper-style game built with React and TypeScript",
   "type": "module",
   "main": "electron/main.js",
-  "author": "GridGuard Development Team",
+  "author": {
+    "name": "GridGuard Development Team",
+    "email": "dev@gridguard.app"
+  },
   "license": "MIT",
   "keywords": [
     "minesweeper",
