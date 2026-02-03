@@ -87,8 +87,7 @@
             "x64"
           ]
         }
-      ],
-      "icon": "public/icon.ico"
+      ]
     },
     "nsis": {
       "oneClick": false,
@@ -99,16 +98,14 @@
     },
     "mac": {
       "target": "dmg",
-      "category": "public.app-category.games",
-      "icon": "public/icon.icns"
+      "category": "public.app-category.games"
     },
     "linux": {
       "target": [
         "AppImage",
         "deb"
       ],
-      "category": "Game",
-      "icon": "public/icon.png"
+      "category": "Game"
     }
   }
 }
