@@ -11,10 +11,29 @@
 [![Vite](https://img.shields.io/badge/Vite-5.0-646cff.svg)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8.svg)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Downloads](https://img.shields.io/github/downloads/Airshocks69/gridguard/total.svg)](https://github.com/Airshocks69/gridguard/releases)
 
-[🎮 Play Demo](#) • [📖 Documentation](#documentation) • [🐛 Report Bug](#) • [✨ Request Feature](#)
+[🎮 Play Online](https://airshocks69.github.io/gridguard/) • [📥 Download Desktop App](https://github.com/Airshocks69/gridguard/releases/latest) • [📖 Documentation](#documentation) • [🐛 Report Bug](https://github.com/Airshocks69/gridguard/issues)
 
 </div>
+
+---
+
+## 📥 Download & Install
+
+### 🖥️ Desktop App (Windows)
+
+Download the latest Windows installer from the [Releases page](https://github.com/Airshocks69/gridguard/releases/latest):
+
+1. Download `GridGuard-Setup-1.0.0.exe`
+2. Run the installer
+3. Follow the setup wizard
+4. Start playing offline!
+
+### 🌐 Web Version
+
+Play instantly in your browser (no installation required):  
+**[https://airshocks69.github.io/gridguard/](https://airshocks69.github.io/gridguard/)**
 
 ---
 
@@ -49,12 +68,26 @@
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### For Players
+
+**Option 1: Desktop App (Recommended for Windows)**
+- Download the installer from [Releases](https://github.com/Airshocks69/gridguard/releases/latest)
+- Double-click and install
+- Play offline anytime!
+
+**Option 2: Web Browser**
+- Visit [https://airshocks69.github.io/gridguard/](https://airshocks69.github.io/gridguard/)
+- Start playing immediately
+- No installation needed
+
+### For Developers
+
+#### Prerequisites
 
 - Node.js ≥ 18.0.0
 - npm ≥ 9.0.0
 
-### Installation
+#### Installation
 
 ```bash
 # Clone the repository
@@ -66,21 +99,29 @@ cd gridguard
 # Install dependencies
 npm install
 
-# Start development server
+# Start web development server
 npm run dev
+
+# Start Electron desktop app in development mode
+npm run electron:dev
 ```
 
-The application will be available at `http://localhost:5173`
+The web application will be available at `http://localhost:5173`
 
 ## 📦 Build for Production
 
 ```bash
-# Create optimized production build
-npm run build
+# Build for web (GitHub Pages)
+npm run build:web
+
+# Build desktop app (creates Windows installer)
+npm run build:electron
 
 # Preview production build locally
 npm run preview
 ```
+
+The Windows installer will be created in the `release/` directory.
 
 ## 🎮 How to Play
 
