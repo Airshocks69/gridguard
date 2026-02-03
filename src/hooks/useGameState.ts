@@ -10,7 +10,7 @@
  */
 
 import { useState, useCallback, useEffect, useRef } from 'react';
-import type { GameStateManager, CustomConfig, Cell } from '../types';
+import type { CustomConfig } from '../types';
 import { GameState, Difficulty } from '../types';
 import {
   createNewBoard,
@@ -39,7 +39,7 @@ export const useGameState = (initialDifficulty: Difficulty = Difficulty.BEGINNER
   const [timeElapsed, setTimeElapsed] = useState(0);
   const [movesCount, setMovesCount] = useState(0);
   
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<number | null>(null);
   
   /**
    * Starts the game timer

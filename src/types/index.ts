@@ -12,33 +12,39 @@
 /**
  * Difficulty levels available in the game
  */
-export enum Difficulty {
-  BEGINNER = 'BEGINNER',
-  INTERMEDIATE = 'INTERMEDIATE',
-  EXPERT = 'EXPERT',
-  CUSTOM = 'CUSTOM',
-}
+export const Difficulty = {
+  BEGINNER: 'BEGINNER',
+  INTERMEDIATE: 'INTERMEDIATE',
+  EXPERT: 'EXPERT',
+  CUSTOM: 'CUSTOM',
+} as const;
+
+export type Difficulty = typeof Difficulty[keyof typeof Difficulty];
 
 /**
  * Current state of the game
  */
-export enum GameState {
-  IDLE = 'IDLE',
-  PLAYING = 'PLAYING',
-  WON = 'WON',
-  LOST = 'LOST',
-  PAUSED = 'PAUSED',
-}
+export const GameState = {
+  IDLE: 'IDLE',
+  PLAYING: 'PLAYING',
+  WON: 'WON',
+  LOST: 'LOST',
+  PAUSED: 'PAUSED',
+} as const;
+
+export type GameState = typeof GameState[keyof typeof GameState];
 
 /**
  * State of an individual cell
  */
-export enum CellState {
-  HIDDEN = 'HIDDEN',
-  REVEALED = 'REVEALED',
-  FLAGGED = 'FLAGGED',
-  QUESTIONED = 'QUESTIONED',
-}
+export const CellState = {
+  HIDDEN: 'HIDDEN',
+  REVEALED: 'REVEALED',
+  FLAGGED: 'FLAGGED',
+  QUESTIONED: 'QUESTIONED',
+} as const;
+
+export type CellState = typeof CellState[keyof typeof CellState];
 
 /**
  * Configuration for different difficulty levels

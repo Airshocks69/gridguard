@@ -39,8 +39,8 @@ export const Grid: React.FC<GridProps> = ({
           gridTemplateColumns: `repeat(${board.cols}, minmax(0, 1fr))`,
         }}
       >
-        {board.cells.map((row, rowIndex) =>
-          row.map((cell, colIndex) => (
+        {board.cells.map((row) =>
+          row.map((cell) => (
             <Cell
               key={cell.id}
               cell={cell}
