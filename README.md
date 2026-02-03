@@ -58,7 +58,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/gridguard.git
+git clone https://github.com/Airshocks69/gridguard.git
 
 # Navigate to project directory
 cd gridguard

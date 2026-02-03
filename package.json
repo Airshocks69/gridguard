@@ -15,12 +15,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/gridguard.git"
+    "url": "https://github.com/Airshocks69/gridguard.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/gridguard/issues"
+    "url": "https://github.com/Airshocks69/gridguard/issues"
   },
-  "homepage": "https://github.com/yourusername/gridguard#readme",
+  "homepage": "https://airshocks69.github.io/gridguard",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
